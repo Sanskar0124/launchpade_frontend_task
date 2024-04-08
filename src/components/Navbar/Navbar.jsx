@@ -40,7 +40,7 @@ export default function Navbar() {
     ];
     return (
         <>
-            <header className='w-full bg-white md:bg-transparent fixed top-0 left-0 right-0'>
+            <header className='w-full bg-white md:bg-transparent  top-0 left-0 right-0'>
                 <nav className={`shadow-xl py-4 ls:px-14 px-16 ${isSticky ? "sticky top-0 left-0 right-0 border bg-white duration-300" : ""}`}>
 
                     <div className='flex justify-between items-center text-base gap-8'>
@@ -49,11 +49,11 @@ export default function Navbar() {
                         </a>
 
                         {/* nav items for large devices */}
-                        <ul className='md:flex space-x-12 hidden'>
+                        <ul className='md:flex space-x-12 hidden lg:flex'>
                             {
                                 navItems.map(({ link, path, router }) => {
                                     return (<Link to={path} spy={true} smooth={true} offset={-100}
-                                        key={path} className='text-xs block cursor-pointer  text-gray900 ☐ hover:text-brandPrimary
+                                        key={path} className='text-xs block cursor-pointer hidden lg:flex  text-gray900 ☐ hover:text-brandPrimary
                   first:font-medium'>{link}</Link>)
                                 }
                                 )}
@@ -61,14 +61,14 @@ export default function Navbar() {
                         </ul>
 
                         {/* btn for large devices */}
-                        <div className='space-x-5 hidden lg:flex items-center '>
+                        <div className='space-x-5  lg:flex items-center '>
                             <a href="/" className='hidden lg:flex items-center text-brandPrimary hover:text-gray900 text-xs'>Login</a>
-                            <button className='bg-brandPrimary text-white py-2 px-4 transition-all duration-300
+                            <button className='hidden lg:flex bg-brandPrimary text-white py-2 px-4 transition-all duration-300
                         rounded-3xl hover:bg-neutralDGrey text-xs'>Register Now</button>
                         </div>
 
                         {/* menu btn for only mobile devices */}
-                        <div className='md:hidden'>
+                        <div className='lg:hidden'>
                             <button
                                 onClick={toggleMenu}
                                 className='text-neutralDGrey focus:outline-none focus:text-gray-500'>
