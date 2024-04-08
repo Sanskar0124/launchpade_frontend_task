@@ -43,6 +43,31 @@ const WhatsNew = () => {
             return 'small2';
     };
 
+    const getImageTextSize = index => {
+        if (!hoveredIndex && index === 0)
+            return 'largeimgtext0'
+        else if (!hoveredIndex && index === 1)
+            return 'mediumimgtext0'
+        else if (!hoveredIndex && index === 2)
+            return 'smallimgtext0'
+        if (hoveredIndex === 0 && index === 1)
+            return 'medium0';
+        else if (hoveredIndex === 0 && index === 2)
+            return 'small0';
+        else if (hoveredIndex === 1 && index === 0)
+            return 'mediumimgtext1';
+        else if (hoveredIndex === 1 && index === 2)
+            return 'smallimgtext1';
+        else if (hoveredIndex === 1 && index === 1)
+            return 'largeimgtext1';
+        else if (hoveredIndex === 2 && index === 2)
+            return 'largeimgtext2';
+        else if (hoveredIndex === 2 && index === 1)
+            return 'mediumimgtext2';
+        else if (hoveredIndex === 2 && index === 0)
+            return 'smallimgtext2';
+    };
+
     return (
         <div className='mx-16'>
             <div className='flex justify-between whats-new-container'>
@@ -60,6 +85,13 @@ const WhatsNew = () => {
                             onMouseEnter={() => handleMouseEnter(0)}
                             onMouseLeave={handleMouseLeave}
                         />
+                        <div className={getImageTextSize(0)}>
+                            <div className='flex items-center img-text-head'>
+                                <sapn className='img-text-circle'></sapn>
+                                <h2 className='img-text-title'>Masterclass</h2>
+                            </div>
+                            <p className={hoveredIndex === 0 ? '' : 'hidden'}>Real-world learnings from the best.</p>
+                        </div>
                     </div>
                     <div className="image-container">
                         <img
@@ -69,6 +101,13 @@ const WhatsNew = () => {
                             onMouseEnter={() => handleMouseEnter(1)}
                             onMouseLeave={handleMouseLeave}
                         />
+                        <div className={getImageTextSize(1)}>
+                            <div className='flex items-center img-text-head'>
+                                <sapn className='img-text-circle'></sapn>
+                                <h2 className='img-text-title'>Masterclass</h2>
+                            </div>
+                            <p className={hoveredIndex === 1 ? '' : 'hidden'}>Real-world learnings from the best.</p>
+                        </div>
                     </div>
                     <div className="image-container">
                         <img
@@ -78,6 +117,13 @@ const WhatsNew = () => {
                             onMouseEnter={() => handleMouseEnter(2)}
                             onMouseLeave={handleMouseLeave}
                         />
+                        <div className={getImageTextSize(2)}>
+                            <div className='flex items-center img-text-head'>
+                                <sapn className='img-text-circle'></sapn>
+                                <h2 className='img-text-title'>Masterclass</h2>
+                            </div>
+                            <p className={hoveredIndex === 2 ? '' : 'hidden'}>Real-world learnings from the best.</p>
+                        </div>
                     </div>
                 </div>
             </div>

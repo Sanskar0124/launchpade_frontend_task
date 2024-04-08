@@ -7,6 +7,22 @@
 }
 
 
+.img-text-circle {
+    background-color: #F18F01;
+    padding: 1.8rem;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.img-text-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: absolute;
+    padding-left: 1.1rem;
+    color: aliceblue;
+    z-index: 10;
+}
+
 .discover-button-2-container {
     visibility: hidden;
 }
@@ -20,6 +36,7 @@
     align-items: flex-end;
     /* background-color: red; */
     height: 400px;
+    justify-content: start;
 }
 
 .swiper-image-container {
@@ -116,6 +133,104 @@
 .swiper-container-custom {
     height: 40rem !important;
 }
+
+
+.largeimgtext0 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    margin-bottom: 2rem;
+    /* Rotate the element from the left side */
+    /* transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center; */
+}
+
+.mediumimgtext0 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    /* Rotate the element from the left side */
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    margin-left: 12rem;
+}
+
+.smallimgtext0 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    /* Rotate the element from the left side */
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    margin-left: 8rem;
+}
+
+.largeimgtext1 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.mediumimgtext1 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    /* Rotate the element from the left side */
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    margin-left: 3rem;
+    z-index: 10;
+}
+
+.smallimgtext1 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    /* Rotate the element from the left side */
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    margin-left: 12rem;
+}
+
+.largeimgtext2 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.mediumimgtext2 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    /* Rotate the element from the left side */
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    margin-left: 3rem;
+    z-index: 10;
+}
+
+.smallimgtext2 {
+    position: absolute;
+    font-size: 0.8rem;
+    color: aliceblue;
+    transition: all 0.6s ease-in-out;
+    /* Rotate the element from the left side */
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    margin-left: 6rem;
+}
+
+
 
 @media only screen and (max-width: 1364px) {
     body {
