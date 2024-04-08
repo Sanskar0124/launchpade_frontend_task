@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import { useLocation } from 'react-router-dom';
 import { helix } from 'ldrs'
+import WhatsNew from '../components/WhatsNew/WhatsNew';
 
 helix.register()
 
@@ -42,6 +43,7 @@ function LandingPage() {
                 (
                     <>
                         <Navbar home={true} />
+                        <WhatsNew />
                     </>
                 )
             }

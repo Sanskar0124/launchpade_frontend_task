@@ -1,0 +1,20 @@
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-gallery img {
+    transition: all 0.3s ease-in-out;
+}
+
+.image-gallery img.small {
+    transform: scale(0.8);
+}
+
+.image-gallery img.medium {
+    transform: scale(1);
+}
+
+.image-gallery img.large {
+    transform: scale(1.2);
+}
