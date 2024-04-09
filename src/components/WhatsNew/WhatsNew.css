@@ -247,10 +247,6 @@
 
 
 @media only screen and (max-width: 1364px) {
-    body {
-        background-color: lightblue;
-    }
-
     .whats-new-container {
         margin-top: 15rem;
     }
@@ -306,10 +302,6 @@
 }
 
 @media only screen and (max-width: 1306px) {
-    body {
-        background-color: lightyellow;
-    }
-
     .whats-new-container {
         margin-top: 4rem;
     }
@@ -409,10 +401,6 @@
 }
 
 @media only screen and (max-width: 1113px) {
-    body {
-        background-color: lightgreen;
-    }
-
     .whats-new-container {
         margin-top: 3rem;
     }
@@ -504,10 +492,6 @@
 }
 
 @media only screen and (max-width: 1050px) {
-    body {
-        background-color: lightpink;
-    }
-
     .image-gallery {
         margin-left: 5.8rem;
     }
