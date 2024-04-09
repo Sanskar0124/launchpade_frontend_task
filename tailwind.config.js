@@ -13,7 +13,10 @@ export default {
         'brandPrimary': '#173D7A',
         'lightBlue': '#78C4FE',
         'neutralGrey': '#717171',
-        'gray900': '#717171'
+        'gray900': '#717171',
+        'imgCircleColor1': '#F18F01',
+        'imgCircleColor2': '#115D98',
+        'imgCircleColor3': '#147B85',
       }
     },
   },

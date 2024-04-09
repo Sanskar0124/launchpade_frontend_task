@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './WhatsNew.css'; // Import your CSS file for styling
 import { CgArrowLongRight } from "react-icons/cg";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 const WhatsNew = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const swiperRef = useRef(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+
 
     const handleMouseEnter = index => {
         setHoveredIndex(index);
@@ -87,10 +89,10 @@ const WhatsNew = () => {
                         />
                         <div className={getImageTextSize(0)}>
                             <div className='flex items-center img-text-head'>
-                                <sapn className='img-text-circle'></sapn>
+                                <sapn className='bg-imgCircleColor1 img-text-circle'></sapn>
                                 <h2 className='img-text-title'>Masterclass</h2>
                             </div>
-                            <p className={hoveredIndex === 0 ? '' : 'hidden'}>Real-world learnings from the best.</p>
+                            <p className={`img-text-p ${hoveredIndex === 0 ? '' : 'hidden'}`}>Real-world learnings from the best.</p>
                         </div>
                     </div>
                     <div className="image-container">
@@ -103,10 +105,10 @@ const WhatsNew = () => {
                         />
                         <div className={getImageTextSize(1)}>
                             <div className='flex items-center img-text-head'>
-                                <sapn className='img-text-circle'></sapn>
-                                <h2 className='img-text-title'>Masterclass</h2>
+                                <sapn className='bg-imgCircleColor2 img-text-circle'></sapn>
+                                <h2 className='img-text-title'>Webinar</h2>
                             </div>
-                            <p className={hoveredIndex === 1 ? '' : 'hidden'}>Real-world learnings from the best.</p>
+                            <p className={`img-text-p ${hoveredIndex === 1 ? '' : 'hidden'}`}>Learn Industry relevant skills online.</p>
                         </div>
                     </div>
                     <div className="image-container">
@@ -119,10 +121,10 @@ const WhatsNew = () => {
                         />
                         <div className={getImageTextSize(2)}>
                             <div className='flex items-center img-text-head'>
-                                <sapn className='img-text-circle'></sapn>
-                                <h2 className='img-text-title'>Masterclass</h2>
+                                <sapn className='bg-imgCircleColor3  img-text-circle'></sapn>
+                                <h2 className='img-text-title'>Podcast</h2>
                             </div>
-                            <p className={hoveredIndex === 2 ? '' : 'hidden'}>Real-world learnings from the best.</p>
+                            <p className={`img-text-p ${hoveredIndex === 2 ? '' : 'hidden'}`}>Learn Industry trends from the experts.</p>
                         </div>
                     </div>
                 </div>
@@ -131,8 +133,8 @@ const WhatsNew = () => {
             <div className='lg:hidden mb-16'>
                 <Swiper
                     slidesPerView={1.6}
-                    // centeredSlides={true}
-                    spaceBetween={100}
+                    centeredSlides={true}
+                    spaceBetween={50}
                     grabCursor={true}
                     pagination={{
                         clickable: true,
@@ -141,7 +143,7 @@ const WhatsNew = () => {
                     className="mySwiper swiper-container-custom"
                 >
                     <SwiperSlide>
-                        <div className="swiper-image-container">
+                        <div className="swiper-image-container ">
                             <img
                                 src="https://github.com/Sanskar0124/launchpade_frontend_task/blob/master/src/assets/whats_new/first_image.png?raw=true"
                                 alt="First Image"
@@ -152,7 +154,7 @@ const WhatsNew = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="swiper-image-container">
+                        <div className="swiper-image-container ">
                             <img
                                 src="https://github.com/Sanskar0124/launchpade_frontend_task/blob/master/src/assets/whats_new/second_image.png?raw=true"
                                 alt="Second Image"
@@ -163,7 +165,7 @@ const WhatsNew = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="swiper-image-container">
+                        <div className="swiper-image-container ">
                             <img
                                 src="https://github.com/Sanskar0124/launchpade_frontend_task/blob/master/src/assets/whats_new/third_image.png?raw=true"
                                 alt="Third Image"
