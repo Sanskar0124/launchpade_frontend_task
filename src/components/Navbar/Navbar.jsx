@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { FaXmark, FaBars } from "react-icons/fa6";
 import { Bio } from '../../data/constatnts';
-import { Footer } from "flowbite-react";
+import { Dropdown, Footer } from "flowbite-react";
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 
 export default function Navbar() {
@@ -33,15 +33,15 @@ export default function Navbar() {
 
     const navItems = [
         { link: "What's New", path: 'home', },
-        { link: "Knowledge Hub", path: "service", type: 'home' },
+        { link: "Knowledge Hub", path: "service", type: 'home', dropdown: true },
         { link: "CB News", path: "request", type: 'home' },
         { link: "Internship", path: "request", type: 'home' },
         { link: "About Us", path: "request", type: 'home' },
     ];
     return (
-        <>
-            <header className='w-full bg-white md:bg-transparent  top-0 left-0 right-0'>
-                <nav className={`shadow-xl py-4 ls:px-14 px-16 ${isSticky ? "sticky top-0 left-0 right-0 border bg-white duration-300" : ""}`}>
+        <div style={{ zIndex: 20000 }}>
+            <header className='w-full  top-0 left-0 right-0' >
+                <nav className={` shadow-xl py-4 ls:px-14 px-16 `}>
 
                     <div className='flex justify-between items-center text-base gap-8'>
                         <a href="/" className='text-2xl font-semibold flex items-center space-x-3'>
@@ -51,9 +51,37 @@ export default function Navbar() {
                         {/* nav items for large devices */}
                         <ul className='md:flex space-x-12 hidden lg:flex'>
                             {
-                                navItems.map(({ link, path, router }) => {
-                                    return (<Link to={path} spy={true} smooth={true} offset={-100}
-                                        key={path} className='text-xs block cursor-pointer hidden lg:flex  text-gray900 ☐ hover:text-brandPrimary
+                                navItems.map(({ link, path, dropdown }) => {
+                                    if (dropdown)
+                                        return (
+                                            <Dropdown className='text-xs block cursor-pointer lg:flex  text-gray900 ☐ hover:text-brandPrimary
+                                            first:font-medium' label={((<Link to={path} spy={true} smooth={true} offset={-100}
+                                                    key={path} className='text-xs block cursor-pointer hidden lg:flex  text-gray900 ☐ hover:text-brandPrimary
+                      first:font-medium'>{link}</Link>))} dismissOnClick={false} inline>
+
+                                                <div>
+                                                    <div className='flex'>
+                                                        <div>
+                                                            <h1 className='text-5xl'>Join our <br />registration list</h1>
+                                                            <p>Join our
+                                                                registration list
+                                                                And receive updates, expert educational insights, and early access to our platform.
+                                                                Join</p>
+                                                        </div>
+                                                        <div>
+                                                            <Dropdown.Item>Dashboard</Dropdown.Item>
+                                                            <Dropdown.Item>Settings</Dropdown.Item>
+                                                            <Dropdown.Item>Earnings</Dropdown.Item>
+                                                            <Dropdown.Item>Sign out</Dropdown.Item>
+                                                        </div>
+                                                    </div>
+                                                    Hello World
+                                                </div>
+                                            </Dropdown>
+                                        )
+                                    else
+                                        return (<Link to={path} spy={true} smooth={true} offset={-100}
+                                            key={path} className='text-xs block cursor-pointer hidden lg:flex  text-gray900 ☐ hover:text-brandPrimary
                   first:font-medium'>{link}</Link>)
                                 }
                                 )}
@@ -68,7 +96,7 @@ export default function Navbar() {
                         </div>
 
                         {/* menu btn for only mobile devices */}
-                        <div className='lg:hidden'>
+                        <div className='lg:hidden' style={{ zIndex: 20000 }}>
                             <button
                                 onClick={toggleMenu}
                                 className='text-neutralDGrey focus:outline-none focus:text-gray-500'>
@@ -94,6 +122,6 @@ export default function Navbar() {
 
                 </nav>
             </header >
-        </>
+        </div>
     )
 }

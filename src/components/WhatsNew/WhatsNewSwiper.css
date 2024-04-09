@@ -1,0 +1,442 @@
+.firstImg0 {
+    transform: translateX(-5%);
+}
+
+.secondImg0 {
+    transform: translate(-5%, 9%);
+}
+
+.firstImg1 {
+    transform: translate(25%, 22%);
+}
+
+.secondImg1 {
+    transform: translateX(31%);
+}
+
+.thirdImg1 {
+    transform: translate(28%, 8%);
+}
+
+.secondImg2 {
+    transform: translate(70%, 17%);
+}
+
+.thirdImg2 {
+    transform: translate(72%, -5%);
+}
+
+.swiper-img-text-p {
+    font-size: 2rem;
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+}
+
+.swiper-img-text-title {
+    font-weight: 600;
+    font-size: 3rem;
+    position: absolute;
+    padding-left: 2rem;
+    color: aliceblue;
+    z-index: 10;
+}
+
+.swiper-img-text-circle {
+    background-color: #F18F01;
+    padding: 4rem;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+
+.swiperFirstImageClass0 {
+    position: absolute;
+    color: antiquewhite;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.swiperSecondImageClass0 {
+    position: absolute;
+    color: antiquewhite;
+    margin-left: 10rem;
+    margin-bottom: 0rem;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    transition: all 0.6s ease-in-out;
+}
+
+.swiperFirstImageClass1 {
+    position: absolute;
+    color: antiquewhite;
+    margin-left: 30rem;
+    margin-bottom: 0rem;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    transition: all 0.6s ease-in-out;
+}
+
+.swiperSecondImageClass1 {
+    position: absolute;
+    color: antiquewhite;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.swiperThirdImageClass1 {
+    position: absolute;
+    color: antiquewhite;
+    margin-left: 10rem;
+    margin-bottom: 0rem;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    transition: all 0.6s ease-in-out;
+}
+
+.swiperSecondImageClass2 {
+    position: absolute;
+    color: antiquewhite;
+    margin-left: 29rem;
+    margin-bottom: 0rem;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left center;
+    transition: all 0.6s ease-in-out;
+}
+
+.swiperThirdImageClass2 {
+    position: absolute;
+    color: antiquewhite;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.6s ease-in-out;
+}
+
+@media only screen and (max-width: 980px) {
+    body {
+        background-color: cadetblue;
+    }
+
+    .swiper_container {
+        margin-top: -3rem;
+    }
+}
+
+@media only screen and (max-width: 944px) {
+    .swiper_container {
+        margin-top: -5rem;
+    }
+
+    /* Swiper image queries  */
+    .swiper-img-text-p {
+        font-size: 1.7rem;
+    }
+
+    .swiper-img-text-title {
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+
+    .swiper-img-text-circle {
+        padding: 3rem;
+    }
+
+
+    .swiperFirstImageClass0 {
+        margin-left: 3rem;
+    }
+
+    .swiperSecondImageClass0 {
+        margin-left: 8rem;
+    }
+
+    .swiperFirstImageClass1 {
+        margin-left: 27rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperSecondImageClass1 {
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .swiperThirdImageClass1 {
+        margin-left: 8rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperSecondImageClass2 {
+        margin-left: 27rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperThirdImageClass2 {
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .swiper_container {
+        margin-top: -5rem;
+    }
+
+    .discover-button {
+        padding: 2rem 6rem;
+    }
+}
+
+@media only screen and (max-width: 884px) {
+    .swiper_container {
+        margin-top: -5rem;
+        width: 50rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 2rem 6rem;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .swiper_container {
+        margin-top: 0rem;
+        width: 40rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 2rem 9.5rem;
+    }
+
+    .firstImg1 {
+        transform: translate(10%, 22%);
+    }
+
+    .secondImg1 {
+        transform: translateX(20%);
+    }
+
+    .thirdImg1 {
+        transform: translate(20%, 5%);
+    }
+}
+
+@media only screen and (max-width: 874px) {
+    .swiper_container {
+        margin-top: -5rem;
+        width: 49rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 2rem 6rem;
+    }
+}
+
+@media only screen and (max-width: 858px) {
+    .swiper_container {
+        margin-top: -6rem;
+        width: 47rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 2rem 6rem;
+    }
+
+    /* Swiper image queries  */
+    .swiper-img-text-p {
+        font-size: 1.7rem;
+    }
+
+    .swiper-img-text-title {
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+
+    .swiper-img-text-circle {
+        padding: 3rem;
+    }
+
+
+    .swiperFirstImageClass0 {
+        margin-left: 3rem;
+    }
+
+    .swiperSecondImageClass0 {
+        margin-left: 8rem;
+    }
+
+    .swiperFirstImageClass1 {
+        margin-left: 25rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperSecondImageClass1 {
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .swiperThirdImageClass1 {
+        margin-left: 8rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperSecondImageClass2 {
+        margin-left: 25rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperThirdImageClass2 {
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .swiper_container {
+        margin-top: -8rem;
+        width: 44rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 1.8rem 5rem;
+    }
+
+    .swiperFirstImageClass1 {
+        margin-left: 22rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperSecondImageClass2 {
+        margin-left: 22rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media only screen and (max-width: 787px) {
+    .swiper_container {
+        margin-top: -10rem;
+        width: 41rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 1.7rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 729px) {
+    .swiper_container {
+        margin-top: -12rem;
+        width: 38rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 1.7rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .swiper_container {
+        margin-top: -14rem;
+        width: 36rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 1.7rem 3.5rem;
+        font-size: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .swiper_container {
+        margin-top: -16rem;
+        width: 33rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 1.7rem 3.5rem;
+        font-size: 1.2rem !important;
+    }
+
+    /* Swiper image queries  */
+    .swiper-img-text-p {
+        font-size: 0.8rem;
+    }
+
+    .swiper-img-text-title {
+        font-size: 1.5rem;
+        padding-left: 1.2rem;
+    }
+
+    .swiper-img-text-circle {
+        padding: 2rem;
+    }
+
+
+    .swiperFirstImageClass0 {
+        margin-left: 1rem;
+    }
+
+    .swiperSecondImageClass0 {
+        margin-left: 5rem;
+    }
+
+    .swiperFirstImageClass1 {
+        margin-left: 15rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperSecondImageClass1 {
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .swiperThirdImageClass1 {
+        margin-left: 5rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperSecondImageClass2 {
+        margin-left: 13.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .swiperThirdImageClass2 {
+        margin-left: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 606px) {
+    .swiper_container {
+        margin-top: -18rem;
+        width: 30rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 1.7rem 3.5rem;
+        font-size: 1.2rem !important;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    .swiper_container {
+        margin-top: -20rem;
+        width: 27rem;
+    }
+
+    .discover-button {
+        margin-top: 1rem !important;
+        padding: 1rem 3rem;
+        font-size: 0.8rem !important;
+    }
+}

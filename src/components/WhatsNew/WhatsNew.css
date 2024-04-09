@@ -235,6 +235,17 @@
     /* Adjust the position of the first slide */
 }
 
+.swiper_container {
+    position: relative;
+}
+
+.swiper-image-container {
+    display: flex;
+    align-items: end;
+}
+
+
+
 @media only screen and (max-width: 1364px) {
     body {
         background-color: lightblue;
@@ -590,5 +601,21 @@
 
     .smallimgtext2 {
         margin-left: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .whats-new-container {
+        margin-top: -2.5rem;
+    }
+
+    .heading-text {
+        font-size: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 606px) {
+    .heading-text {
+        font-size: 3.5rem !important;
     }
 }

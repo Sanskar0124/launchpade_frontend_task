@@ -42,7 +42,7 @@ function LandingPage() {
                 :
                 (
                     <>
-                        <Navbar home={true} />
+                        <Navbar home={true} style={{ zIndex: 20000 }} />
                         <WhatsNew />
                     </>
                 )
