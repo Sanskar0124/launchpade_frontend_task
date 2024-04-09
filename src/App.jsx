@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './App.css'
 import LandingPage from './pages/LandingPage';
 
+
 function App() {
     const [isLoading, setIsLoading] = useState(true)
 
@@ -20,7 +21,7 @@ function App() {
                         <l-helix
                             size="100"
                             speed="2.5"
-                            color="#4CAF4F"
+                            color="#173D7A"
                         ></l-helix>
                     </div>
                 )
