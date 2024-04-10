@@ -600,6 +600,12 @@
 
 @media only screen and (max-width: 606px) {
     .heading-text {
-        font-size: 3.5rem !important;
+        font-size: 2.3rem !important;
+    }
+}
+
+@media only screen and (max-width: 516px) {
+    .whatsNew-main-container {
+        margin: 0rem 1.5rem !important;
     }
 }

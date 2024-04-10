@@ -43,6 +43,23 @@ export default function WhatsNewSwiper({ hoveredIndex }) {
             return 'swiperThirdImageClass2'
     }
 
+    const getImageSize = (index) => {
+        if (activeIndex === 0 && index === 0)
+            return 'swiperImgOne0'
+        else if (activeIndex === 0 && index === 1)
+            return 'swiperImgTwo0'
+        else if (activeIndex === 1 && index === 0)
+            return 'swiperImgOne1'
+        else if (activeIndex === 1 && index === 1)
+            return 'swiperImgTwo1'
+        else if (activeIndex === 1 && index === 2)
+            return 'swiperImgThree1'
+        else if (activeIndex === 2 && index === 1)
+            return 'swiperImgTwo2'
+        else if (activeIndex === 2 && index === 2)
+            return 'swiperImgThree2'
+    }
+
     return (
         <div>
             <Swiper
@@ -71,6 +88,7 @@ export default function WhatsNewSwiper({ hoveredIndex }) {
                 <SwiperSlide className='swiper-slider-container'>
                     <div className={`${getSwiperClass(0)} swiper-image-container`}>
                         <img
+                            className={`${getImageSize(0)}`}
                             src="https://github.com/Sanskar0124/launchpade_frontend_task/blob/master/src/assets/whats_new/first_image.png?raw=true"
                             alt="First Image"
                         />
@@ -86,6 +104,7 @@ export default function WhatsNewSwiper({ hoveredIndex }) {
                 <SwiperSlide>
                     <div className={`${getSwiperClass(1)} swiper-image-container`}>
                         <img
+                            className={`${getImageSize(1)}`}
                             src="https://github.com/Sanskar0124/launchpade_frontend_task/blob/master/src/assets/whats_new/second_image.png?raw=true"
                             alt="Second Image"
                         />
@@ -101,6 +120,7 @@ export default function WhatsNewSwiper({ hoveredIndex }) {
                 <SwiperSlide>
                     <div className={`${getSwiperClass(2)} swiper-image-container`}>
                         <img
+                            className={`${getImageSize(2)}`}
                             src="https://github.com/Sanskar0124/launchpade_frontend_task/blob/master/src/assets/whats_new/third_image.png?raw=true"
                             alt="Third Image"
                         />

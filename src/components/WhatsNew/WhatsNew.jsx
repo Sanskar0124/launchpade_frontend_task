@@ -71,7 +71,7 @@ const WhatsNew = () => {
     };
 
     return (
-        <div className='mx-16'>
+        <div className='mx-16 whatsNew-main-container'>
             <div className='flex justify-between whats-new-container'>
                 <div className='headingText'>
                     <h2 className='font-normal text-7xl  heading-text'> Explore. <br /> Upskill. <br />Elevate.</h2>

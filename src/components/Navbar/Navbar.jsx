@@ -63,7 +63,7 @@ export default function Navbar() {
     return (
         <div style={{ zIndex: 20000 }}>
             <header className='w-full  top-0 left-0 right-0' >
-                <nav className={` shadow-xl py-4 ls:px-14 px-16 `}>
+                <nav className={` shadow-xl py-4 ls:px-14 px-16 navbar-main-container`}>
 
                     <div className='flex justify-between items-center text-base gap-8'>
                         <a href="/" className='text-2xl font-semibold flex items-center space-x-3'>

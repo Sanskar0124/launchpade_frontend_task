@@ -113,6 +113,7 @@
     transition: all 0.6s ease-in-out;
 }
 
+
 @media only screen and (max-width: 980px) {
     .swiper_container {
         margin-top: -3rem;
@@ -185,13 +186,48 @@
 
 @media only screen and (max-width: 884px) {
     .swiper_container {
-        margin-top: -5rem;
+        margin-top: -2rem !important;
         width: 50rem;
     }
 
     .discover-button {
         margin-top: 1rem !important;
         padding: 2rem 6rem;
+    }
+
+    .swiperImgOne0 {
+        height: 37rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo0 {
+        height: 35rem;
+        object-fit: cover;
+    }
+
+    .swiperImgOne1 {
+        height: 38rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo1 {
+        height: 37rem;
+        object-fit: cover;
+    }
+
+    .swiperImgThree1 {
+        height: 35rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo2 {
+        height: 38rem;
+        object-fit: cover;
+    }
+
+    .swiperImgThree2 {
+        height: 37rem;
+        object-fit: cover;
     }
 }
 
@@ -413,14 +449,65 @@
 
 @media only screen and (max-width: 606px) {
     .swiper_container {
-        margin-top: -18rem;
+        margin-top: -14rem !important;
         width: 30rem;
     }
 
     .discover-button {
-        margin-top: 1rem !important;
+        margin-top: 0.3rem !important;
         padding: 1.7rem 3.5rem;
         font-size: 1.2rem !important;
+    }
+
+    .swiperFirstImageClass1 {
+        margin-left: 14rem;
+    }
+
+    .firstImg1 {
+        transform: translate(35%, 22%);
+    }
+
+    .secondImg1 {
+        transform: translate(34%, 0%);
+    }
+
+    .thirdImg1 {
+        transform: translate(20%, 10%);
+    }
+
+    .swiperImgOne0 {
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo0 {
+        height: 24rem;
+        object-fit: cover;
+    }
+
+    .swiperImgOne1 {
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo1 {
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .swiperImgThree1 {
+        height: 23rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo2 {
+        height: 26rem;
+        object-fit: cover;
+    }
+
+    .swiperImgThree2 {
+        height: 25rem;
+        object-fit: cover;
     }
 }
 
@@ -434,5 +521,92 @@
         margin-top: 1rem !important;
         padding: 1rem 3rem;
         font-size: 0.8rem !important;
+    }
+}
+
+@media only screen and (max-width: 516px) {
+    .swiper_container {
+        margin-top: -16rem !important;
+        width: 29rem;
+    }
+
+    .discover-button {
+        margin-top: 0.5rem !important;
+        padding: 1rem 3rem;
+        font-size: 0.8rem !important;
+    }
+
+    .firstImg1 {
+        transform: translate(27%, 27%);
+    }
+
+    .swiperFirstImageClass1 {
+        margin-left: 16rem;
+    }
+
+    .swiperSecondImageClass2 {
+        margin-left: 15.5rem;
+    }
+
+    .secondImg0 {
+        transform: translate(-20%, 8%);
+    }
+
+    .secondImg1 {
+        transform: translate(20%, 0%);
+    }
+
+    .secondImg2 {
+        transform: translate(33%, 26%);
+    }
+
+    .thirdImg1 {
+        transform: translate(0%, 10%);
+    }
+
+    .thirdImg2 {
+        transform: translate(30%, 0%);
+    }
+
+    .swiperImgOne0 {
+        height: 23rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo0 {
+        height: 22rem;
+        object-fit: cover;
+    }
+
+    .swiperImgOne1 {
+        height: 23rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo1 {
+        height: 23rem;
+        object-fit: cover;
+    }
+
+    .swiperImgThree1 {
+        height: 21rem;
+        object-fit: cover;
+    }
+
+    .swiperImgTwo2 {
+        height: 23rem;
+        object-fit: cover;
+    }
+
+    .swiperImgThree2 {
+        height: 23rem;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .swiper_container {
+        margin-top: -16rem !important;
+        width: 20rem;
     }
 }

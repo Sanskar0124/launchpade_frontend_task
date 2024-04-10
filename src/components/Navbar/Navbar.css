@@ -1,3 +1,10 @@
 .modal-container {
     transition: all 2s ease-in-out;
 }
+
+@media only screen and (max-width: 516px) {
+    .navbar-main-container {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+}
