@@ -532,32 +532,37 @@
 
     .discover-button {
         margin-top: 0.5rem !important;
-        padding: 1rem 3rem;
+        padding: 0.5rem 1.5rem;
         font-size: 0.8rem !important;
     }
 
-    .firstImg1 {
-        transform: translate(27%, 27%);
-    }
-
     .swiperFirstImageClass1 {
-        margin-left: 16rem;
+        margin-left: 10rem;
     }
 
     .swiperSecondImageClass2 {
-        margin-left: 15.5rem;
+        margin-left: 9rem;
+    }
+
+    .swiperThirdImageClass1 {
+        margin-left: 4rem;
     }
 
     .secondImg0 {
         transform: translate(-20%, 8%);
     }
 
+
+    .firstImg1 {
+        transform: translate(48%, 27%);
+    }
+
     .secondImg1 {
-        transform: translate(20%, 0%);
+        transform: translate(32%, 0%);
     }
 
     .secondImg2 {
-        transform: translate(33%, 26%);
+        transform: translate(100%, 26%);
     }
 
     .thirdImg1 {
@@ -565,7 +570,7 @@
     }
 
     .thirdImg2 {
-        transform: translate(30%, 0%);
+        transform: translate(90%, 0%);
     }
 
     .swiperImgOne0 {
@@ -601,6 +606,20 @@
     .swiperImgThree2 {
         height: 23rem;
         object-fit: cover;
+    }
+
+    .swiper-img-text-p {
+        font-size: 0.8rem;
+    }
+
+    .swiper-img-text-title {
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding-left: 1rem;
+    }
+
+    .swiper-img-text-circle {
+        padding: 1.5rem;
     }
 }
 
