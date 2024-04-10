@@ -144,7 +144,7 @@ export default function Navbar() {
                 </nav>
                 {openModal ?
                     (
-                        <div className='px-16 modal-container' style={{ width: '100wh', position: 'absolute', backgroundColor: 'white', zIndex: 200 }}>
+                        <div className='px-16 drop-shadow-xl modal-container' style={{ width: '100wh', position: 'absolute', backgroundColor: 'white', zIndex: 200 }}>
                             <div className='flex mx-12 py-8' style={{ zIndex: '800' }}>
                                 <div className='' style={{ width: '40%' }}>
                                     <h1 className='text-4xl font-semibold'>Join our <br />registration list</h1>
